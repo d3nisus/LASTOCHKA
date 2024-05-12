@@ -60,6 +60,11 @@ public class AlcoholController {
         return "add";
     }
 
+    @GetMapping("/alcohols/get_cart")
+    public String GetCart(Model model) {
+        return "cart";
+    }
+
     // Метод добавления товара в базу данных + сохранение картинки товара на диске
     @PostMapping("/alcohols/add")
     public ResponseEntity<?> AddAlcohol (@RequestBody Alcohol alcohol) throws IOException {

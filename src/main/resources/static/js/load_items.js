@@ -12,7 +12,7 @@ async function get_all() {
 }
 
 function create_card(id, img, name, price) {
-    console.log(img, name, price);
+//    console.log(img, name, price);
     const card_item = 
     `
         <div class="product_card">
@@ -21,7 +21,7 @@ function create_card(id, img, name, price) {
             </a>
             <span class="name">${name}</span>
             <span class="price">${price}</span>
-            <button class="add_to_card_btn">add to cart</button>
+            <button class="add_to_card_btn" onclick="addtolocalstorageplz('${id}', '${name}', '${price}')">add to cart</button>
         </div>
     `
     card_container.insertAdjacentHTML("afterbegin", card_item)
@@ -40,5 +40,18 @@ async function load_items() {
         var type = element.type;
         create_card(id, img, name, price);
     }
+}
+
+function addtolocalstorageplz(id, name, price) {
+
+    const alcohol = {
+        name: name,
+        price: price
+    }
+    localStorage.setItem(id, JSON.stringify(alcohol));
 
 }
+
+
+
+

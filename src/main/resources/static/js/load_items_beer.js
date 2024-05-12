@@ -17,23 +17,9 @@ function create_card(id, img, name, price) {
             </a>
             <span class="name">${name}</span>
             <span class="price">${price}</span>
-            <button class="add_to_card_btn">add to cart</button>
+            <button class="add_to_card_btn" onclick="addtolocalstorageplz('${id}', '${name}', '${price}')">add to cart</button>
         </div>
     `
-    // `
-    //     <div class="card">
-    //         <div class="card_top">
-    //             <a href="${id}" class="card_img">
-    //                 <img class="card_img" src="data:image/png;base64,${img}" alt="beluga" width="220px">
-    //             </a>
-    //         </div>
-    //         <div class="card_bottom">
-    //             <div class="card_price">${price}</div>
-    //             <a href="#" class="card_title">${name}</a>
-    //             <a href="#" class="card_btn">В корзину</a>
-    //         </div>
-    //     </div>
-    // `
     card_container.insertAdjacentHTML("afterbegin", card_item)
 }
 
@@ -50,5 +36,14 @@ async function load_items() {
         var type = element.type;
         create_card(id, img, name, price);
     }
+}
+
+function addtolocalstorageplz(id, name, price) {
+
+    const alcohol = {
+        name: name,
+        price: price
+    }
+    localStorage.setItem(id, JSON.stringify(alcohol));
 
 }

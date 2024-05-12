@@ -14,7 +14,8 @@
         <a href="/alcohols/add" sec:authorize="hasRole('ROLE_ADMIN')">
             <img th:src="@{/images/add-file.png}" alt="" style="margin-right: 0px;">
         </a>
-        <a href="#" sec:authorize="isAuthenticated()">
+        <a href="/alcohols/get_cart">
+<!--        <a href="/alcohols/get_cart" sec:authorize="isAuthenticated()">-->
             <img th:src="@{/images/shopping-cart.png}" alt="">
         </a>
         <a href="/users/login" sec:authorize="!isAuthenticated()">

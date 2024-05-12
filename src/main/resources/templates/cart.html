@@ -10,15 +10,16 @@
     <div class="main_content">
         <div th:insert="~{blocks/categories}"></div>
         <div class="products">
-            <span>whiskey? whiskey!</span>
-            <p></p>
-
             <div id="popular" class="popular_cards">
-
+<!--                вставка сюда-->
             </div>
         </div>
+        <div>
+            <span id="vstavka"></span>
+            <button>Оплатить</button>
+        </div>
     </div>
-    <script th:src="@{/js/load_items_whiskey.js}"></script>
+    <script th:src="@{/js/get_all_from_cart.js}"></script>
     <footer th:insert="~{blocks/footer}"></footer>
 </body>
 </html>
