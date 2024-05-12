@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Koulen";
+}
+    
+html {
+    /* background: linear-gradient(#2C9BEB, #00FF57, #ffffff); */
+    background-image: url("/images/anime_sky.jpg");
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    width: 75%;
+    background: #FBFBFB;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header > a {
+    text-decoration: none;
+    color: black;
+}
+
+.brand {
+    float: left;
+    height: 100px;
+}
+
+.brand > img {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.brand > span {
+    font-size: 50px;
+    vertical-align: top;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-bottom: 28px;
+    position: absolute;
+    left: 41%;
+    
+}
+
+.search > input {
+    width: 366px;
+    height: 54px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 35px;
+    caret-color: transparent;
+}
+
+.search > input::placeholder {
+    text-align: center;
+    font-size: 35px;
+}
+
+.user_info {
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.user_info > span {
+    display: flex;
+    height: 35px;
+}
+
+.loginAndCart {
+    float: right;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.loginAndCart > a > img{
+    width: 75px;
+    height: 75px;
+    margin-right: 13px;
+    margin-top: 13px;
+}
+
+.logout {
+    margin-top: 13px;
+    margin-right: 13px;
+    width: 75px;
+    height: 75px;
+}
+
+.main_content {
+    width: 75%;
+    background: #FBFBFB;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.categories {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.category > img {
+    width: 75px;
+    height: 75px;
+    margin-top: 29px;
+}
+
+.category > span {
+    float: right;
+    margin-top: 48px;
+}
+
+
+
+.categories > a {
+    text-decoration: none;
+    color: black;
+    font-size: 34px;
+}
+
+.carousel {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/images/alco.jpg");
+    height: 246px;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.car_buttons {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.car_buttons > button {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    margin-left: auto;
+    float: right;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.under_c_btns {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.under_c_btns > button {
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    border: none;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    background-color: #f7f7f7;
+}    
+
+.under_c_btns >button:hover {
+    background-color: black;
+}
+
+.products {
+    margin-top: 60px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products > span {
+    font-size: 50px;
+}
+
+.product_card {
+    background-color: #ffffff;
+    width: 300px;
+    height: 556px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.popular_cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 38px;
+}
+
+.product_card > img {
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.product_card > a > img{
+    display: flex;
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+
+.name {
+    font-size: 25px;
+    margin-left: 34px;
+}
+
+.price {
+    font-size: 30px;
+    margin-left: 34px;
+}
+
+.add_to_card_btn {
+    border: none;
+    background-color: #FBFBFB;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    width: 230px;
+    height: 65px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.add_to_card_btn:hover{
+    background-color: black;
+    color: #FBFBFB;
+}
+
+.footer {
+    background-color: #FBFBFB;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+
+.about {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_title {
+    font-size: 50px;
+    margin-left: 36px;
+    padding-top: 20px;
+}
+
+.about_text {
+    margin-left: 36px   ;
+    width: 870px;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 92px;
+}
+
+.creators {
+    margin-left: auto;
+    float: right;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 465px;
+    height: 399px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 31px;
+    margin-right: 36px;
+    border-radius: 15px;
+}
+
+.logo_and_name {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.logo_and_name > img {
+    width: 294px;
+    height: 294px;
+    border-radius: 147px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.creator_name {
+    margin-left: 15px;
+    font-size: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.creator_info {
+    font-family: 'KoHo', sans-serif;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.social {
+    display: flex;
+    float: right;
+    margin-left: auto;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.social > a {
+    height: 90px;
+    margin-bottom: 46px;
+    margin-right: 15px;
+}
+
+.social > a > img {
+    width: 90px;
+    height: 90px;
+}
+
+/* login and registration */
+
+.login_form {
+    background-color: #F7F7F7;
+    height: 556px;
+    width: 500px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 274px;
+}
+
+.registration_form {
+    background-color: #F7F7F7;
+    height: 831px;
+    width: 500px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 274px;
+}
+
+.form_name {
+    font-size: 50px;
+    margin-left: 25px;
+    margin-top: 24px;
+}
+
+.auth_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_form > input[type="text"]{
+    width: 450px;
+    height: 75px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding-left: 21px;
+    font-size: 35px;
+    caret-color: transparent;
+}
+
+.auth_form > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.auth_form > button {
+    border: none;
+    height: 75px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.auth_form > button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+/* add form */
+
+.add {
+    background-color: #F7F7F7;
+    /* height: 1426px; */
+    width: 500px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 274px;
+}
+
+.add_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add_form > input[type="text"], input[type="number"], textarea, input[type="file"]{
+    width: 450px;
+    max-width: 450px;
+    min-width: 450px;
+    height: 75px;
+    min-height: 75px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding-left: 21px;
+    font-size: 35px;
+    caret-color: transparent;
+}
+
+.add_form > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add_form > button {
+    border: none;
+    height: 75px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.add_form > button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+.types_selection {
+    width: 450px;
+    height: 75px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding-left: 21px;
+    font-size: 35px;
+    caret-color: transparent;
+}
+
+.add_form > img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.product_page {
+    width: 1080px;
+    height: 777px;
+    background-color: #ffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product_left {
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+
+.product_left > img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info_and_desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_middle {
+    margin-top: 24px;
+    float: left;
+    font-size: 30px;
+    margin-right: 200px;
+}
+
+.form_text {
+    margin-left: 25px;
+}
+
+.product_right {
+    margin-top: 24px;
+    float: right;
+    margin-left: auto;
+    margin-right: 31px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.desc_text {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.price_and_button {
+    float: right;
+    margin-left: auto;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.price_and_button > button {
+    border: none;
+    height: 75px;
+    margin-top: 24px;
+    width: 230px;
+    height: 65px;
+    margin-right: 31px;
+    margin-left: 31px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    background-color: #fbfbfb;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 45px;
+}
+
+.price_and_button > button:hover {
+    background-color: black;
+    color: #ffffff;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header th:insert="~{blocks/header}"></header>
+    <div class="main_content">
+        <div class="registration_form">
+            <span class="form_name">registration</span><br>
+            <form class="auth_form">
+                <input type="text" name="first_name" id="first_name" placeholder="name">
+                <input type="text" name="second_name" id="second_name" placeholder="second name">
+                <input type="text" name="nickname" id="nickname" placeholder="username">
+                <input type="text" name="phone" id="phone" placeholder="8 000 000 00 00">
+                <input type="text" name="pass" id="pass" placeholder="password">
+                <input type="text" name="repass" id="repass" placeholder="repeat password">
+                <button type="button" onclick="isEverythingOk()">press me</button>
+            </form>
+        </div>
+    </div>
+    <footer th:insert="~{blocks/footer}"></footer>
+    <div style="color: none; opacity: 0; height: 25px;">0</div>
+    <script th:src="@{/js/registration.js}"></script>
+    <script th:src="@{/js/phone_format.js}"></script>
+</body>
+</html>
